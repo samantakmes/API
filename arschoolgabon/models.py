@@ -7,7 +7,7 @@ from django.db import models
 
 class Utilisateur(models.Model):
     #id_utilisateur=models.UUIDField(primary_key=True, default=uuid.uuid4)
-    login = models.CharField(max_length=100, null=False, blank=False,help_text='Longin...')
+    login = models.CharField(max_length=100, null=False, blank=False,help_text='Login...')
     password = models.CharField(max_length=100, null=False, blank=False,help_text='Mot de passe...')
     ROLE = (
     ('e','Enseignant'),
